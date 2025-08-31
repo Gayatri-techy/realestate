@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Alert</title>
+    <link rel="icon" href="./logo.png" type="img.png"/>
+    <!-- To extract the External CSS -->
+    <link rel="stylesheet" href="./External.css" />
+    <!-- To import the icons by font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<header>
+    <section class="head-section">
+        <div class="head-container">
+        <div class="left-side">
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <a href="./menu.html">MENU</a>
+          </div>
+          <div class="queries">
+                <i class="fa-regular fa-bell"></i>
+                <a href="./alert.html">CREATE AN ALERT</a>
+          </div>
+            <a href="./estatevalue.html">REAL ESTATE VALUE</a>
+        </div>
+            <div class="head-section-image">
+                <a href="./index.html"><img src="./dream-removebg-preview.png" height="120px"></a>
+        </div>
+        <div class="right-side">
+        <div class="links">
+                <a href="./adviser.html">BECOME ADVERTISER</a>
+        </div>
+        <a href="mailto:dreaminn@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        <a href="./favorite.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="./profile.html"><i class="fa-regular fa-user"></i></a>
+            <a href="en">EN</a>
+    </div>
+</div>
+</div>
+    </section>
+</header>
+<body>
+    <section class="alert-section">
+            <div class="alert-heading">
+                Email alert
+            </div>
+            <div class="alert-content">
+                Receive information solely on new properties
+            </div>
+            
+                <div class="alert-title"> Select your search criteria, enter your E-mail and activate.<br>
+                    You can stop or modify this alert by simply clicking on a link indicated at the end of <br>the message received</div>
+                    <div class="alert-subheading"><p>Your search criteria.</p></div>
+                    <div class="checking">
+                        <div class="container">
+                <div class="alert-context-1">
+                    <form>
+                    <input type="radio" name="select" id="sale" class="accent">
+                    <label for="sale">Sale</label>
+                        <input type="radio" name="select" id="rent" class="accent">
+                    <label for="rent">Rent</label>
+                    </form>
+                </div>
+                <div class="alert-context-2">
+                    <form>
+                        <label for="ques">Where are you looking for ?</label>
+                        <input list="lists" placeholder="Select a locality" class="setting" id="ques">
+                        <datalist id="lists">
+                            <option value="Paris"></option>
+                            <option value="Marseille"></option>
+                            <option value="Lyon"></option>
+                            <option value="Toulouse"></option>
+                            <option value="Nice"></option>
+                            <option value="Nantes"></option>
+                            <option value="Montpellier"></option>
+                            <option value="Strasbourg"></option>
+                            <option value="Bordeaux and Lille"></option>
+                        </datalist>
+                    </form>
+                </div>
+                <div class="alert-context-3">
+                    <p>EXTEND TO NEARBY TOWNS</p>
+                    <div class="alert-context-sec">
+                    <div><input type="radio" id="0km" name="km" class="accent">
+                        <label for="0km">0 Km</label></div>
+                    <div><input type="radio" id="5km" name="km" class="accent">
+                        <label for="5km">5 Km</label></div>
+                    <div><input type="radio" id="10km" name="km" class="accent">
+                        <label for="10km">10 Km</label></div>
+                    <div> <input type="radio" id="20km" name="km" class="accent">
+                        <label for="20km">20 Km</label></div>
+                </div>
+            </div>
+                <div class="alert-context-4">
+                    <form>
+                        <label for="property">Types of properties</label>
+                        <input list="type" class="setting" id="property">
+                        <datalist id="type">
+                            <option value="All"></option>
+                            <option value="Apartment / Loft"></option>
+                            <option value="House / Villa / Mansion"></option>
+                        </datalist>
+                    </form>
+                </div>
+                <div class="alert-context-5">
+                    Price
+                    <form>
+                        <div><input type="number" placeholder="Budget min" ></div>
+                        <div><input type="number" placeholder="Budget max" ></div>
+                    </form>
+                </div>
+                <div class="alert-context-6">
+                    <form>
+                        <label for="room">Number of main rooms</label>
+                        <input list="rooms" class="setting" id="room">
+                        <datalist id="rooms">
+                            <option value="All"></option>
+                            <option value="1 main room"></option>
+                            <option value="2 main rooms"></option>
+                            <option value="3 main rooms"></option>
+                            <option value="4 main rooms"></option>
+                            <option value="5 main rooms"></option>
+                            <option value="6 main rooms"></option>
+                            <option value="7 main rooms"></option>
+                            <option value="8 main rooms"></option>
+                            <option value="9 main rooms"></option>
+                            <option value="10 main rooms"></option>
+                            <option value="11 main rooms"></option>
+                            <option value="12 main rooms"></option>
+                            <option value="13 main rooms"></option>
+                            <option value="14 main rooms"></option>
+                            <option value="15 main rooms"></option>
+                        </datalist>
+                    </form>
+                </div>
+                <div class="alert-context-7">
+                    <form>
+                        <label for="clue">Keywords</label>
+                        <input type="text" class="setting" id="clue"></form>
+                </div>
+                <div class="alert-context-8" >
+                    <form>
+                        <label for="mail">Your E-mail</label>
+                        <input type="email" class="setting" id="mail">
+                    </form>
+                </div>
+                <div class="alert-context-9">
+                    <div class="text"><p>* Consult our <span>privacy policy</span></p></div>
+                    <div><button>Save as an alert</button></div>
+                </div>
+            </div>
+                    </div>
+    </section>
+
+ 
+    <footer>
+    <div class="footer-section">
+    <p class="footer-title"><i class="fa-solid fa-house"></i> <span>DREAM INN</span></p>
+    <form>
+        <input type="text" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
+        <button>Submit</button>
+    </form>
+</div>
+
+<div class="footer-credentials">
+
+    <div>
+        <p class="footer-heading">Internal links</p>
+        <p class="footer-content">Professional work place<br>Find a prestige property<br>French Riviera magazine<br>To subscribe<br>Links</p>
+    </div>
+
+    <div>
+        <p class="footer-heading">Villas and Properties</p>
+        <p class="footer-content">Antibes | Cannes | Grasse |<br> Monaco | Nice | St-paul-de-<br>vence | Var | Provence |<br> Languedoc-roussillon | Autres</p>
+    </div>
+
+    <div>
+        <p class="footer-heading">Apartments</p>
+        <p class="footer-content">Antibes | Cannes | Grasse |<br> Monaco | Nice | St-paul-de-<br>vence | Var | Provence |<br> Languedoc-roussillon | Autres</p>
+    </div>
+
+    <div>
+        <p class="footer-heading">Links</p>
+        <p class="footer-content">LUXURY RENTALS by Residences<br>Real estate France<br>
+            1 | 2 | 3 | 4 | 5 | Keywords | <br>Short term rentals |<br> Privacy policy</p>
+    </div>
+
+</div>
+
+    <div class="social-media">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-tiktok"></i>
+   </div>
+</footer>
+</body>
+</html>
