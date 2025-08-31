@@ -41,79 +41,76 @@
     </section>
 </header>
 <body>
-    <section class="alert-section">
-            <div class="alert-heading">
-                Email alert
-            </div>
-            <div class="alert-content">
-                Receive information solely on new properties
-            </div>
+<section class="alert-section">
+    <div class="alert-heading">
+        Email alert
+    </div>
+    <div class="alert-content">
+        Receive information solely on new properties
+    </div>
             
-                <div class="alert-title"> Select your search criteria, enter your E-mail and activate.<br>
-                    You can stop or modify this alert by simply clicking on a link indicated at the end of <br>the message received</div>
-                    <div class="alert-subheading"><p>Your search criteria.</p></div>
-                    <div class="checking">
-                        <div class="container">
-                <div class="alert-context-1">
-                    <form>
-                    <input type="radio" name="select" id="sale" class="accent">
+    <div class="alert-title"> Select your search criteria, enter your E-mail and activate.<br>
+        You can stop or modify this alert by simply clicking on a link indicated at the end of <br>the message received
+    </div>
+    <div class="alert-subheading"><p>Your search criteria.</p></div>
+    <div class="checking">
+        <form action="https://formspree.io/f/movnwkrg" method="post">
+            <div class="container">
+            <div class="alert-context-1">          
+                <div>
+                    <input type="radio" name="mode" id="sale" class="accent">
                     <label for="sale">Sale</label>
-                        <input type="radio" name="select" id="rent" class="accent">
+                </div>           
+                <div>
+                    <input type="radio" name="mode" id="rent" class="accent">
                     <label for="rent">Rent</label>
-                    </form>
                 </div>
-                <div class="alert-context-2">
-                    <form>
-                        <label for="ques">Where are you looking for ?</label>
-                        <input list="lists" placeholder="Select a locality" class="setting" id="ques">
-                        <datalist id="lists">
-                            <option value="Paris"></option>
-                            <option value="Marseille"></option>
-                            <option value="Lyon"></option>
-                            <option value="Toulouse"></option>
-                            <option value="Nice"></option>
-                            <option value="Nantes"></option>
-                            <option value="Montpellier"></option>
-                            <option value="Strasbourg"></option>
-                            <option value="Bordeaux and Lille"></option>
-                        </datalist>
-                    </form>
-                </div>
-                <div class="alert-context-3">
-                    <p>EXTEND TO NEARBY TOWNS</p>
-                    <div class="alert-context-sec">
+            </div>
+            <div class="alert-context-2">
+                    <label for="ques">Where are you looking for ?</label>
+                    <input list="lists" placeholder="Select a locality" class="setting" id="ques" name="NearByLocation">
+                    <datalist id="lists">
+                        <option value="Paris"></option>
+                        <option value="Marseille"></option>
+                        <option value="Lyon"></option>
+                        <option value="Toulouse"></option>
+                        <option value="Nice"></option>
+                        <option value="Nantes"></option>
+                        <option value="Montpellier"></option>
+                        <option value="Strasbourg"></option>
+                        <option value="Bordeaux and Lille"></option>
+                    </datalist>
+            </div>
+            <div class="alert-context-3">
+                <p>EXTEND TO NEARBY TOWNS</p>
+                <div class="alert-context-sec">
                     <div><input type="radio" id="0km" name="km" class="accent">
                         <label for="0km">0 Km</label></div>
                     <div><input type="radio" id="5km" name="km" class="accent">
                         <label for="5km">5 Km</label></div>
                     <div><input type="radio" id="10km" name="km" class="accent">
                         <label for="10km">10 Km</label></div>
-                    <div> <input type="radio" id="20km" name="km" class="accent">
+                    <div><input type="radio" id="20km" name="km" class="accent">
                         <label for="20km">20 Km</label></div>
                 </div>
             </div>
-                <div class="alert-context-4">
-                    <form>
-                        <label for="property">Types of properties</label>
-                        <input list="type" class="setting" id="property">
-                        <datalist id="type">
-                            <option value="All"></option>
-                            <option value="Apartment / Loft"></option>
-                            <option value="House / Villa / Mansion"></option>
-                        </datalist>
-                    </form>
-                </div>
-                <div class="alert-context-5">
+            <div class="alert-context-4">
+                <label for="property">Types of properties</label>
+                <input list="type" class="setting" id="property" name="typeOfProp">
+                <datalist id="type">
+                    <option value="All"></option>
+                    <option value="Apartment / Loft"></option>
+                    <option value="House / Villa / Mansion"></option>
+                </datalist>
+            </div>
+            <div class="alert-context-5">
                     Price
-                    <form>
-                        <div><input type="number" placeholder="Budget min" ></div>
-                        <div><input type="number" placeholder="Budget max" ></div>
-                    </form>
-                </div>
-                <div class="alert-context-6">
-                    <form>
+                        <div><input type="number" placeholder="Budget min" name="budgetMin"></div>
+                        <div><input type="number" placeholder="Budget max" name="budgetMax"></div>
+            </div>
+            <div class="alert-context-6">
                         <label for="room">Number of main rooms</label>
-                        <input list="rooms" class="setting" id="room">
+                        <input list="rooms" class="setting" id="room" name="countRooms">
                         <datalist id="rooms">
                             <option value="All"></option>
                             <option value="1 main room"></option>
@@ -132,35 +129,30 @@
                             <option value="14 main rooms"></option>
                             <option value="15 main rooms"></option>
                         </datalist>
-                    </form>
-                </div>
-                <div class="alert-context-7">
-                    <form>
-                        <label for="clue">Keywords</label>
-                        <input type="text" class="setting" id="clue"></form>
-                </div>
-                <div class="alert-context-8" >
-                    <form>
-                        <label for="mail">Your E-mail</label>
-                        <input type="email" class="setting" id="mail">
-                    </form>
-                </div>
-                <div class="alert-context-9">
-                    <div class="text"><p>* Consult our <span>privacy policy</span></p></div>
-                    <div><button>Save as an alert</button></div>
-                </div>
             </div>
-                    </div>
-    </section>
+            <div class="alert-context-7">
+                        <label for="clue">Keywords</label>
+                        <input type="text" class="setting" id="clue" name="clue">
+            </div>
+            <div class="alert-context-8" >
+                        <label for="mail">Your E-mail</label>
+                        <input type="email" class="setting" id="mail" name="email">
+            </div>
+            <div class="alert-context-9">
+                    <div class="text"><p>* Consult our <span>privacy policy</span></p></div>
+                    <div><button type="submit">Save as an alert</button></div>
+            </div>
+        </div>
+        </form>
+    </div>
+</section>
 
- 
-    <footer>
+<footer>
     <div class="footer-section">
-    <p class="footer-title"><i class="fa-solid fa-house"></i> <span>DREAM INN</span></p>
-    <form>
+    <p class="footer-title"><i class="fa-solid fa-house"></i> <span>DREAM INN</span></p>    
         <input type="text" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
         <button>Submit</button>
-    </form>
+    
 </div>
 
 <div class="footer-credentials">

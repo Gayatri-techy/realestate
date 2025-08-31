@@ -277,7 +277,8 @@ footer .social-media {
 .alert-context-1 {
   margin-top: 12px;
   display: flex;
-  gap: 200px;
+  align-items: center;
+  gap: 30px;
   margin-bottom: 20px;
 }
 .alert-context-1 input {
